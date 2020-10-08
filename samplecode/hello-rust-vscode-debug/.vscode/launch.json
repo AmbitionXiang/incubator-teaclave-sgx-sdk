@@ -14,16 +14,16 @@
             "gdbpath": "sgx-gdb",
             "ssh": {
                 "forwardX11": false,
-                "host": "172.19.32.44", // your IP
+                "host": "thuideal-sgx.ddns.net", // your IP
                 "cwd": "${workspaceRoot}/bin",
                  // SSH private key on remote machine. Add the pub key to ~/.ssh/authorized_keys
                  // This ssh configuration is established from host to host, because the current
                  // vscode session is "within a ssh session established by vscode-ssh".
                  // I think this might be a bug but can hardly be resolved.
-                "keyfile": "/home/ding/.ssh/id_rsa", // private key
-                "user": "ding",
-                "bootstrap": "source /opt/sgxsdk/environment",
-                "port": 22
+                "keyfile": "C:\\Users\\79060\\.ssh\\win-sgx-server", // private key
+                "user": "lixiang",
+                "bootstrap": "source /opt/intel/sgxsdk/environment",
+                "port": 9102
             }
         }
     ]
